@@ -8,6 +8,7 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 
 * It is important to remember to run PowerShell or Command Prompt as `Run Administrator` in order to have correct permissions for setup.
 * When working in Windows Terminal, to copy you need to do `CTRL + SHIFT + C` as `CTRL + C` will kill processes.  To paste text you need to use `CTRL + SHIFT + V`.  You can also use the right click on your mouse to both copy and paste text.
+* When using Jupyter Notebooks, you will need to start up the kernel in WSL and then copy and paste the link that comes up into your browser.  I have researched it automatically opening a browser a bit but have not found a reliable solution.
 
 ## Manual Steps
 
