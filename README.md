@@ -58,3 +58,10 @@ Once you are done, to stop using the environment you just run `deactivate` and i
 * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+
+## Resources
+
+* [Awesome-WSL](https://github.com/sirredbeard/Awesome-WSL) - This has been a great place for finding resources for WSL.
+* [Jeremy Skinner Blog](https://jeremyskinner.co.uk/) - Posted a post around how to setup your WSL environment home to be mapped to your windows folder.
+* [https://chocolatey.org/](https://chocolatey.org/) - Package management for Windows in PowerShell.
+* [Windows Terminal](https://github.com/microsoft/terminal) - This has been my favorite terminal so far in Windows.
