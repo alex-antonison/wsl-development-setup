@@ -11,7 +11,7 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 ## Sources .bashrc
 source ~/.bashrc
 
-## Install pyenv
+# ## Install pyenv
 PYTHON_VERSION="3.7.5"
 
 pyenv install $PYTHON_VERSION
