@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Update the apt package list.
 sudo apt-get update -y
 
