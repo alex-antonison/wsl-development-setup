@@ -44,4 +44,5 @@ sudo apt install -y \
     python3-pip \
     libpq-dev \
     python-pip \
-    awscli
+    awscli \
+    graphviz

@@ -1,5 +1,5 @@
 # Guide to setting up dev environment in Windows + WSL
-
+ 
 ## Overview
 
 The purpose of this guide is to document my personal setup for WSL as I am trying to get more used to the environment.  Will adjust this over time as I discover new things.
