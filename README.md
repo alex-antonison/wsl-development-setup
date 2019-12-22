@@ -55,8 +55,7 @@ Once you are done, to stop using the environment you just run `deactivate` and i
 A handy utility to automate the activation and deactivation of environments is [direnv](https://github.com/direnv/direnv).  Once installed, you need to add the appropriate hook into your shell [https://github.com/direnv/direnv/blob/master/docs/hook.md](https://github.com/direnv/direnv/blob/master/docs/hook.md).  Once completed, you can then add a `.envrc` file to your projects and it will automatically activate and deactivate your venv environment.  This is what my `.envrc` file typically looks like
 
 ```config
-export VIRTUAL_ENV=venv
-layout python-venv
+source venv/bin/activate
 ```
 
 ## Suggested-Extensions
