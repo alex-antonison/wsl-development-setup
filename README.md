@@ -77,6 +77,11 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 * [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 * [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+* [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+* [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+* [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+* [filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)
 
 ## Resources
 
