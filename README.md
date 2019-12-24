@@ -75,6 +75,9 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+* [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+* [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+* [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 
 ## Resources
 
