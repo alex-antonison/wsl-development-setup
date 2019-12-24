@@ -34,7 +34,10 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 9. Next, we will install necessary Linux packages for development.  I suggest checking out my [1_setup_linux_packages.sh](ubuntu_scripts/1_setup_linux_packages.sh) script to see what packages I have included prior to running.  There will be a prompt mid-install so be sure to keep an eye out for it and select `Yes`.
 10. With packages installed, I suggest upgrading your `.bashrc` with [Oh My BASH!](https://ohmybash.github.io/).  I have written a short script that will install Oh My Bash as well as echo sourcing your `.bashrc` into your `.bash_profile` at [2_setup_oh_my_bash.sh](ubuntu_scripts/2_setup_oh_my_bash.sh)
     1. There is also an [Oh My ZSH!](https://ohmyz.sh/) if you prefer zshell.
-11. With all necessary packages installed and your `.bashrc` setup, you are now ready to setup Python! [pyenv](https://github.com/pyenv/pyenv) is my favorite method of managing different versions of python.  You can see the [3_setup_python.sh](ubuntu_scripts/3_setup_python.sh) for how to set it up.
+11. With all necessary packages installed and your `.bashrc` setup, you are now ready to setup Python! [pyenv](https://github.com/pyenv/pyenv) is my favorite method of managing different versions of python.  You can see the [3_setup_python.sh](ubuntu_scripts/3_setup_python.sh) for how to set it up.  To ensure your terminal has the updated settings, you should close and re-open it.
+12. To setup docker, you can run the [4_setup_docker.sh](ubuntu_scripts/4_setup_docker.sh) which was pulled from [Setting up docker for windows and wsl to work flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
+13. To seutp docker compose, run [5_setup_docker_compose.sh](ubuntu_scripts/setup_docker_compose.sh).
+14. I like to use [BurnSushi/erd](https://github.com/BurntSushi/erd) for ERD diagrams, you can run [6_setup_erd.sh](ubuntu_scripts/6_setup_erd.sh) which will install Stack, a haskell compiler, and then install erd.
 
 ## Python Environment Management
 
@@ -54,6 +57,10 @@ Once you are done, to stop using the environment you just run `deactivate` and i
 
 A handy utility to automate the activation and deactivation of environments is [direnv](https://github.com/direnv/direnv).  Once installed, you need to add the appropriate hook into your shell [https://github.com/direnv/direnv/blob/master/docs/hook.md](https://github.com/direnv/direnv/blob/master/docs/hook.md).  Once completed, you can then add a `.envrc` file to your projects and it will automatically activate and deactivate your venv environment.  This is what my [.envrc](ubuntu_config/.envrc) looks like.
 
+## Using docker in WSL notes
+
+* So far, it has worked well but the one thing I have encountered that requires something special is in order to mount a volume, you will need to use a `--mount` with `type=bind` in order to get the volume to work.  See here for more information [https://docs.docker.com/storage/bind-mounts/](https://docs.docker.com/storage/bind-mounts/)
+
 ## Suggested-Extensions
 
 * [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
@@ -71,4 +78,4 @@ A handy utility to automate the activation and deactivation of environments is [
 * [Jeremy Skinner Blog](https://jeremyskinner.co.uk/) - Posted a post around how to setup your WSL environment home to be mapped to your windows folder.
 * [https://chocolatey.org/](https://chocolatey.org/) - Package management for Windows in PowerShell.
 * [Windows Terminal](https://github.com/microsoft/terminal) - This has been my favorite terminal so far in Windows.
-* 
+* [Nick Janetakis](https://nickjanetakis.com/) - Posted a blog about setting up and using docker.
