@@ -2,7 +2,7 @@
  
 ## Overview
 
-The purpose of this guide is to document my personal setup for WSL as I am trying to get more used to the environment.  Will adjust this over time as I discover new things.
+The purpose of this guide is to document my personal setup for WSL as I am trying to get more used to the environment.  I will adjust this over time as I discover new and need to setup new things.
 
 ## General notes
 
@@ -59,7 +59,11 @@ A handy utility to automate the activation and deactivation of environments is [
 
 ## Using docker in WSL notes
 
-* So far, it has worked well but the one thing I have encountered that requires something special is in order to mount a volume, you will need to use a `--mount` with `type=bind` in order to get the volume to work.  See here for more information [https://docs.docker.com/storage/bind-mounts/](https://docs.docker.com/storage/bind-mounts/)
+So far, it has worked well but the one thing I have encountered that requires something special is in order to mount a volume, you will need to use a `--mount` with `type=bind` in order to get the volume to work.  See here for more information [https://docs.docker.com/storage/bind-mounts/](https://docs.docker.com/storage/bind-mounts/)
+
+## Using Jupyter Notebook in WSL
+
+When using a jupyter notebook in WSL, in order to allow for a notebook to autmoatically open in a browser, you will need to execute the notebook in combination with executable for your browser of choice.  See the [working_with_jupyter_notebooks.sh](ubuntu_config/working_with_jupyter_notebooks.sh) for some snippets on working with a jupyter notebook in chrome or firefox.
 
 ## Suggested-Extensions
 

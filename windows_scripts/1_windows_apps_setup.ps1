@@ -6,3 +6,6 @@ choco install microsoft-windows-terminal -y
 
 ## Installs git
 choco install git -y
+
+## Install firefox
+choco install firefox -y
