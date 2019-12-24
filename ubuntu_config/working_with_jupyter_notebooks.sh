@@ -11,7 +11,7 @@ python -m ipykernel install --user --name myenv
 jupyter kernelspec list
 
 ## To remove a kernel - https://stackoverflow.com/questions/42635310/remove-kernel-on-jupyter-notebook
-jupyter kernelspec rm kernel_name
+jupyter kernelspec uninstall kernel_name
 
 ## To start a jupyter notebook in chrome - https://github.com/jupyter/notebook/issues/4594 (towards the end)
 BROWSER=/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe jupyter notebook --NotebookApp.use_redirect_file=False
