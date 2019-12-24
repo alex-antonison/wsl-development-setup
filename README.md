@@ -22,8 +22,8 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 5. At this point, you should have Ubuntu 18.04 LTS, VS Code, Windows Terminal, and git installed.  From here you can open up Windows Terminal and the first thing I like to do is go into settings and swap out the default profile to Ubuntu as that will be my main shell of choice.  You can do this by going into the settings and swapping out the guid for the Ubuntu terminal for the `defaultProfile`.
    1. <img src="https://github.com/alex-antonison/wsl-development-setup/blob/master/ubuntu_config/windows-terminal-settings.png" width="50%" height="50%">
    2. <img src="https://github.com/alex-antonison/wsl-development-setup/blob/master/ubuntu_config/windows-terminal-ubuntu-default.png" width="50%" height="50%">
-   3. ![windows terminal](ubuntu_config/windows-terminal-settings.png=250)
-   4. ![ubuntu default](ubuntu_config/windows-terminal-ubuntu-default.png=250)
+   3. ![windows terminal](ubuntu_config/windows-terminal-settings.png =250)
+   4. ![ubuntu default](ubuntu_config/windows-terminal-ubuntu-default.png =250)
 6. To allow for you to have your files shared between Windows and Ubuntu, I like to change my home directory to be mapped to my home windows directory.  In order to allow for docker to also work, you need to create a `/etc/wsl.conf` and put the following in it - [wsl.conf](ubuntu_config/wsl.conf).  You also need to edit your `/etc/passwd` file and chnage your home directory to `/c/Users/username`
     1. For more information, you can look between these blog posts [How to share Windows and WSL Directory](https://jeremyskinner.co.uk/2018/07/27/sharing-home-directory-between-windows-and-wsl/) and [How to setup Docker in WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
     2. If you are interested in keeping your files available between both Windows and Ubuntu, it is important you do this now since it will be a bit cumbersome to do this after the fact.
