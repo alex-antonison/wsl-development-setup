@@ -43,7 +43,7 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 
 After working with [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) for a long time, I have opted recently to switch to using [venv](https://docs.python.org/3/library/venv.html) as it is simple to setup and use, no prior setup is necessary, and it works without fail.  Also, if you are using VS Code and you open VS Code up in your project directory, it will detect
 
-1. To set it up, you will execute `python -m venv /path/to/project/venv` which I suggest being collocated with your project.
+1. To set it up, you will execute `python -m venv /path/to/project` which I suggest being collocated with your project.
 2. To use, you will need to do the following:
 
 ```bash
