@@ -19,7 +19,12 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
     1. There is an option to simply always install the latest LTS but as this guide will be built with 18.04 LTS, if I do upgrade to a future LTS, I will check and make sure it all works before changing that here.
     2. Once you have it installed, you will need to open the Ubuntu app and provide a username and password to complete the setup.  I am not a huge fan of the default terminal and will be suggesting another one in following steps.
 4. Install [VS Code](https://code.visualstudio.com/), [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab), and [git](https://git-scm.com/) with chocolatey with [windows_apps_setup.ps1](windows_scripts/windows_apps_setup.ps1)
-5. At this point, you should have Ubuntu 18.04 LTS, VS Code, Windows Terminal, and git installed.  From here you can open up Windows Terminal and the first thing I like to do is go into settings and swap out the default profile to Ubuntu as that will be my main shell of choice.  You can do this by going into the settings and swapping out the guid for the Ubuntu terminal for the `defaultProfile`. ![](ubuntu_config/windows-terminal-settings.png =100x20) ![](ubuntu_config/windows-terminal-ubuntu-default.png =100x20)
+5. At this point, you should have Ubuntu 18.04 LTS, VS Code, Windows Terminal, and git installed.  From here you can open up Windows Terminal and the first thing I like to do is go into settings and swap out the default profile to Ubuntu as that will be my main shell of choice.  You can do this by going into the settings and swapping out the guid for the Ubuntu terminal for the `defaultProfile`.
+
+![](ubuntu_config/windows-terminal-settings.png =100x20)
+
+![](ubuntu_config/windows-terminal-ubuntu-default.png =100x20)
+
 6. To allow for you to have your files shared between Windows and Ubuntu, I like to change my home directory to be mapped to my home windows directory.  In order to allow for docker to also work, you need to create a `/etc/wsl.conf` and put the following in it - [wsl.conf](ubuntu_config/wsl.conf).  You also need to edit your `/etc/passwd` file and chnage your home directory to `/c/Users/username`
     1. For more information, you can look between these blog posts [How to share Windows and WSL Directory](https://jeremyskinner.co.uk/2018/07/27/sharing-home-directory-between-windows-and-wsl/) and [How to setup Docker in WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
     2. If you are interested in keeping your files available between both Windows and Ubuntu, it is important you do this now since it will be a bit cumbersome to do this after the fact.
@@ -29,12 +34,12 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 8. Before you can use VS Code in WSL, you will need to first open it up and install the WSL extension.  I also suggest checking out some of my other suggested extensions at [Suggested Extensions](#suggested-extensions) section.  Once you have WSL installed, you will be able to easily bring it up by changing to the directory you want to open it in and do `code .`.
    1. One important thing to note is that you will have to install extensions both within WSL as well as on Windows.
 9. Next, we will install necessary Linux packages for development.  I suggest checking out my [1_setup_linux_packages.sh](ubuntu_scripts/1_setup_linux_packages.sh) script to see what packages I have included prior to running.  There will be a prompt mid-install so be sure to keep an eye out for it and select `Yes`.
-10. With packages installed, I suggest upgrading your `.bashrc` with [Oh My BASH!](https://ohmybash.github.io/).  I have written a short script that will install Oh My Bash as well as echo sourcing your `.bashrc` into your `.bash_profile` at [2_setup_oh_my_bash.sh](ubuntu_scripts/2_setup_oh_my_bash.sh)
+10.  With packages installed, I suggest upgrading your `.bashrc` with [Oh My BASH!](https://ohmybash.github.io/).  I have written a short script that will install Oh My Bash as well as echo sourcing your `.bashrc` into your `.bash_profile` at [2_setup_oh_my_bash.sh](ubuntu_scripts/2_setup_oh_my_bash.sh)
     1. There is also an [Oh My ZSH!](https://ohmyz.sh/) if you prefer zshell.
-11. With all necessary packages installed and your `.bashrc` setup, you are now ready to setup Python! [pyenv](https://github.com/pyenv/pyenv) is my favorite method of managing different versions of python.  You can see the [3_setup_python.sh](ubuntu_scripts/3_setup_python.sh) for how to set it up.  To ensure your terminal has the updated settings, you should close and re-open it.
-12. To setup docker, you can run the [4_setup_docker.sh](ubuntu_scripts/4_setup_docker.sh) which was pulled from [Setting up docker for windows and wsl to work flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
-13. To seutp docker compose, run [5_setup_docker_compose.sh](ubuntu_scripts/5_setup_docker_compose.sh).
-14. I like to use [BurnSushi/erd](https://github.com/BurntSushi/erd) for ERD diagrams, you can run [6_setup_erd.sh](ubuntu_scripts/6_setup_erd.sh) which will install Stack, a haskell compiler, and then install erd.
+11.  With all necessary packages installed and your `.bashrc` setup, you are now ready to setup Python! [pyenv](https://github.com/pyenv/pyenv) is my favorite method of managing different versions of python.  You can see the [3_setup_python.sh](ubuntu_scripts/3_setup_python.sh) for how to set it up.  To ensure your terminal has the updated settings, you should close and re-open it.
+12.  To setup docker, you can run the [4_setup_docker.sh](ubuntu_scripts/4_setup_docker.sh) which was pulled from [Setting up docker for windows and wsl to work flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
+13.  To seutp docker compose, run [5_setup_docker_compose.sh](ubuntu_scripts/5_setup_docker_compose.sh).
+14.  I like to use [BurnSushi/erd](https://github.com/BurntSushi/erd) for ERD diagrams, you can run [6_setup_erd.sh](ubuntu_scripts/6_setup_erd.sh) which will install Stack, a haskell compiler, and then install erd.
 
 ## Python Environment Management
 
