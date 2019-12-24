@@ -22,11 +22,11 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 5. At this point, you should have Ubuntu 18.04 LTS, VS Code, Windows Terminal, and git installed.  From here you can open up Windows Terminal and the first thing I like to do is go into settings and swap out the default profile to Ubuntu as that will be my main shell of choice.  You can do this by going into the settings and swapping out the guid for the Ubuntu terminal for the `defaultProfile`.
    1. <img src="https://github.com/alex-antonison/wsl-development-setup/blob/master/ubuntu_config/windows-terminal-settings.png" width="50%" height="50%">
    2. <img src="https://github.com/alex-antonison/wsl-development-setup/blob/master/ubuntu_config/windows-terminal-ubuntu-default.png" width="50%" height="50%">
-   3. ![windows terminal](ubuntu_config/windows-terminal-settings.png){
+   3. ![windows terminal](ubuntu_config/windows-terminal-settings.png){:
    width:150px;
    height:100px;
 }
-   4. ![ubuntu default](ubuntu_config/windows-terminal-ubuntu-default.png){
+   4. ![ubuntu default](ubuntu_config/windows-terminal-ubuntu-default.png){:
    width:150px;
    height:100px;
 }
