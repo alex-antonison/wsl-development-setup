@@ -45,4 +45,5 @@ sudo apt install -y \
     libpq-dev \
     python-pip \
     awscli \
-    graphviz
+    graphviz \
+    npm
