@@ -64,6 +64,11 @@ So far, it has worked well but the one thing I have encountered that requires so
 
 When using a jupyter notebook in WSL, in order to allow for a notebook to autmoatically open in a browser, you will need to execute the notebook in combination with executable for your browser of choice.  See the [working_with_jupyter_notebooks.sh](ubuntu_config/working_with_jupyter_notebooks.sh) for some snippets on working with a jupyter notebook in chrome or firefox.
 
+## mermaid and erd
+
+* [mermaid](https://mermaidjs.github.io/#/) and [erd](https://github.com/BurntSushi/erd) are methods of rendering text into flow charts and ERD diagrams.  This can be useful when wanting to source control the generation of ERD and flow charts.
+* [mermaid](https://mermaidjs.github.io/#/) is great for making a variety of diagrams, however I prefer [erd](https://github.com/BurntSushi/erd) for making erd diagrams.
+
 ## Suggested-Extensions
 
 * [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
