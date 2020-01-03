@@ -95,6 +95,8 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 * [https://chocolatey.org/](https://chocolatey.org/) - Package management for Windows in PowerShell.
 * [Windows Terminal](https://github.com/microsoft/terminal) - This has been my favorite terminal so far in Windows.
 * [Nick Janetakis](https://nickjanetakis.com/) - Posted a blog about setting up and using docker.
+* [mermaid](https://mermaidjs.github.io/#/)
+* [erd](https://github.com/BurntSushi/erd)
 
 ## Contribution Notes
 
