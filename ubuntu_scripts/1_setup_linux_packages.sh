@@ -45,4 +45,9 @@ sudo apt install -y \
     libpq-dev \
     python-pip \
     awscli \
-    graphviz
+    graphviz \
+    libxcursor-dev \
+    libcups2 \
+    libasound2 \
+    libatk-adaptor \
+    libgtk-3-0
