@@ -89,6 +89,7 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 * [filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)
+* [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 
 ## Resources
 
