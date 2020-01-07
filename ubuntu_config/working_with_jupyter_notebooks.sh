@@ -7,7 +7,7 @@ source activate myenv
 ### Add the kernel to ipython
 python -m ipykernel install --user --name myenv
 
-## To list all existing 
+## To list all existing
 jupyter kernelspec list
 
 ## To remove a kernel - https://stackoverflow.com/questions/42635310/remove-kernel-on-jupyter-notebook
