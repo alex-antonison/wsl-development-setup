@@ -22,7 +22,7 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 5. At this point, you should have Ubuntu 18.04 LTS, VS Code, Windows Terminal, and git installed.  From here you can open up Windows Terminal and the first thing I like to do is go into settings and swap out the default profile to Ubuntu as that will be my main shell of choice.  You can do this by going into the settings and swapping out the guid for the Ubuntu terminal for the `defaultProfile`.
    1. <img src="https://github.com/alex-antonison/wsl-development-setup/blob/master/ubuntu_config/windows-terminal-settings.png" width="50%" height="50%">
    2. <img src="https://github.com/alex-antonison/wsl-development-setup/blob/master/ubuntu_config/windows-terminal-ubuntu-default.png" width="50%" height="50%">
-6. To allow for you to have your files shared between Windows and Ubuntu, I like to change my home directory to be mapped to my home windows directory.  In order to allow for docker to also work, you need to create a `/etc/wsl.conf` and put the following in it - [wsl.conf](ubuntu_config/wsl.conf).  You also need to edit your `/etc/passwd` file and chnage your home directory to `/c/Users/username`
+6. To allow for you to have your files shared between Windows and Ubuntu, I like to change my home directory to be mapped to my home windows directory.  In order to allow for docker to also work, you need to create a `/etc/wsl.conf` and put the following in it - [wsl.conf](ubuntu_config/wsl.conf).  You also need to edit your `/etc/passwd` file and change your home directory to `/c/Users/username`
     1. For more information, you can look between these blog posts [How to share Windows and WSL Directory](https://jeremyskinner.co.uk/2018/07/27/sharing-home-directory-between-windows-and-wsl/) and [How to setup Docker in WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
     2. If you are interested in keeping your files available between both Windows and Ubuntu, it is important you do this now since it will be a bit cumbersome to do this after the fact.
     3. I suggest restarting your computer after you have done the above steps.
@@ -62,7 +62,7 @@ So far, it has worked well but the one thing I have encountered that requires so
 
 ## Using Jupyter Notebook in WSL
 
-When using a jupyter notebook in WSL, in order to allow for a notebook to autmoatically open in a browser, you will need to execute the notebook in combination with executable for your browser of choice.  See the [working_with_jupyter_notebooks.sh](ubuntu_config/working_with_jupyter_notebooks.sh) for some snippets on working with a jupyter notebook in chrome or firefox.
+When using a jupyter notebook in WSL, in order to allow for a notebook to automatically open in a browser, you will need to execute the notebook in combination with executable for your browser of choice.  See the [working_with_jupyter_notebooks.sh](ubuntu_config/working_with_jupyter_notebooks.sh) for some snippets on working with a jupyter notebook in chrome or firefox.
 
 ## mermaid and erd
 
@@ -99,6 +99,7 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 * [filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)
 * [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 ## Resources
 
