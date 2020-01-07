@@ -69,6 +69,11 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 * [mermaid](https://mermaidjs.github.io/#/) and [erd](https://github.com/BurntSushi/erd) are methods of rendering text into flow charts and ERD diagrams.  This can be useful when wanting to source control the generation of ERD and flow charts.
 * [mermaid](https://mermaidjs.github.io/#/) is great for making a variety of diagrams, however I prefer [erd](https://github.com/BurntSushi/erd) for making erd diagrams.
 
+## oh-my-tmux
+
+* [oh-my-tmux](https://github.com/gpakosz/.tmux) is a tmux profile that adds some interesting aspects to your tmux sessions.
+* To set it up, you can run the [8_setup_oh_my_tmux.sh](ubuntu_scripts/8_setup_oh_my_tmux.sh) shell script.
+
 ## Suggested-Extensions
 
 * [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
