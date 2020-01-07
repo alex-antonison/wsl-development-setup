@@ -75,6 +75,10 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 
 * [oh-my-tmux](https://github.com/gpakosz/.tmux) is a tmux profile that adds some interesting aspects to your tmux sessions.
 * To set it up, you can run the [8_setup_oh_my_tmux.sh](ubuntu_scripts/8_setup_oh_my_tmux.sh) shell script.
+* When using a tmux session, you will notice that there is a periodic spike in CPU when it is refreshing the status bar.  There are two ways to limit this:
+  * You can go into the `~/.tmux.conf` file and change the `set -g status-interval` from `10` to `60`.  This will have it only refresh every 60 seconds versus every 10 seconds.
+  * You can go into the `.tmux.conf.local` file and remove the battery indicator from the refresh by deleting the battery section from the `tmux_conf_theme_status_right`
+    * The battery section is this `#{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} ,`
 
 ## Suggested-Extensions
 
