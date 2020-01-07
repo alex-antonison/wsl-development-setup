@@ -35,7 +35,7 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
     1. There is also an [Oh My ZSH!](https://ohmyz.sh/) if you prefer zshell.
 11. With all necessary packages installed and your `.bashrc` setup, you are now ready to setup Python! [pyenv](https://github.com/pyenv/pyenv) is my favorite method of managing different versions of python.  You can see the [3_setup_python.sh](ubuntu_scripts/3_setup_python.sh) for how to set it up.  To ensure your terminal has the updated settings, you should close and re-open it.
 12. To setup docker, you can run the [4_setup_docker.sh](ubuntu_scripts/4_setup_docker.sh) which was pulled from [Setting up docker for windows and wsl to work flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
-13. To seutp docker compose, run [5_setup_docker_compose.sh](ubuntu_scripts/5_setup_docker_compose.sh).
+13. To setup docker compose, run [5_setup_docker_compose.sh](ubuntu_scripts/5_setup_docker_compose.sh).
 14. I like to use [BurnSushi/erd](https://github.com/BurntSushi/erd) for ERD diagrams, you can run [6_setup_erd.sh](ubuntu_scripts/6_setup_erd.sh) which will install Stack, a haskell compiler, and then install erd.
 
 ## Python Environment Management
