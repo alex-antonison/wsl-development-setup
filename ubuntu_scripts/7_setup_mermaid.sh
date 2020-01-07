@@ -14,5 +14,7 @@ cd $HOME/.mermaid.cli
 yarn add mermaid.cli
 
 ## Add mermaid.cli to path
+## Struggled to have this done automatically, need to manually do it
+## Add the below line to your .bashrc file
 
-echo "export PATH=$PATH:~/.mermaid.cli/node_modules/.bin" >> >> $HOME/.bashrc
+# export PATH="$PATH:$HOME/.mermaid.cli/node_modules/.bin"

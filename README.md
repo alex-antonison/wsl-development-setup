@@ -66,6 +66,8 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 
 ## mermaid and erd
 
+* The [7_setup_mermaid.sh](ubuntu_scripts/7_setup_mermaid.sh) will setup everything except in order to call the command from the CLI, you will need to manually add the following to your path.  I attempted to include this in the script but had issues because it was expanding the $PATH variable and not loading correctly.
+  * `export PATH="$PATH:$HOME/.mermaid.cli/node_modules/.bin"`
 * [mermaid](https://mermaidjs.github.io/#/) and [erd](https://github.com/BurntSushi/erd) are methods of rendering text into flow charts and ERD diagrams.  This can be useful when wanting to source control the generation of ERD and flow charts.
 * [mermaid](https://mermaidjs.github.io/#/) is great for making a variety of diagrams, however I prefer [erd](https://github.com/BurntSushi/erd) for making erd diagrams.
 
@@ -92,6 +94,7 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to autmoa
 * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 * [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 * [filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)
+* [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 
 ## Resources
 
