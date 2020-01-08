@@ -114,3 +114,6 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to automa
 ## Contribution Notes
 
 * When working in the Ubuntu scripts, if you run into an odd error, it could be a result of Windows new line characters, you can run `sed -i -e 's/\r$//' filename` to resolve the issue.
+
+## Cap lock as Control key in Windows
+(Link to Instructions on the Command)[https://superuser.com/questions/949385/map-capslock-to-control-in-windows-10]
