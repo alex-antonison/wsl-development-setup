@@ -135,3 +135,13 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to automa
 
 ## Cap lock as Control key in Windows
 [Link to Instructions on the Command](https://superuser.com/questions/949385/map-capslock-to-control-in-windows-10)
+
+## neovim on ubuntu
+
+Most things need neovim that is past 0.3
+- [SO page](https://askubuntu.com/questions/430008/how-to-install-neovim-on-ubuntu)
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
+```
