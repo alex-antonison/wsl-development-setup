@@ -65,7 +65,8 @@ So far, it has worked well but the one thing I have encountered that requires so
 
 ## aws-vault and vault (hashicorp vault)
 
-For aws-vault and hashicorp vault install : [10_vault_aws_vault.sh](ubuntu/config/10_vault_aws_vault.sh)
+For aws-vault and hashicorp vault install : [10_vault_aws_vault.sh](ubuntu_config/10_vault_aws_vault.sh)
+* Chad Notes of Understanding (or rather what he understands to this point) [notes](chad_notes/notes_aws-vault_hashicorp-vault.md)
 * hashicorp vault : [stratasan doc page](https://github.com/stratasan/docs/blob/master/configure_vault.md)
   * uses Active Directory for credentialing
   * will need to have Active Directory credentials set up for your group (match your team)
