@@ -61,6 +61,7 @@ A handy utility to automate the activation and deactivation of environments is [
 ## Using docker in WSL notes
 
 So far, it has worked well but the one thing I have encountered that requires something special is in order to mount a volume, you will need to use a `--mount` with `type=bind` in order to get the volume to work.  See here for more information [https://docs.docker.com/storage/bind-mounts/](https://docs.docker.com/storage/bind-mounts/)
+- additional note about `docker-compose` not funcitoning properly in wsl: [docker-compose_problem.md](chad_notes/docker-compose_problem.md)
 
 ## aws-vault and vault (hashicorp vault)
 
@@ -74,9 +75,12 @@ For aws-vault and hashicorp vault install : [10_vault_aws_vault.sh](ubuntu/confi
   * [Doc Page](https://github.com/99designs/aws-vault)
   * security tool to manage aws credentials
   * set up
-    * `aws-vault add <name>` 
+    * `aws-vault add <name>`
       * add your access key and secret key
       * ubuntu will prompt for a password to encrypt the file
+    * after adding a profile in aws-vault add the default region
+        * in `~/.aws/config`
+        * `region = us-east-1`
 
 ## Using Jupyter Notebook in WSL
 
@@ -145,3 +149,8 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get install neovim
 ```
+
+## Chad Notes
+- aliases and functions to add to `.bashrc` added functionality around `aws-vault` and `vault`: [bash_functions.sh](chad_notes/bash_functions.sh)
+- note about adding `pipx` to wsl [note_pipx.md](chad_notes/note_pipx.md)
+
