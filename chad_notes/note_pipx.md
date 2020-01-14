@@ -5,4 +5,9 @@
         - docker-compose
         - pipenv
         - pgcli
+- add to `~/.bashrc`:
+```
+# pipx
+export PATH="$PATH:~/.local/bin"
+```
 
