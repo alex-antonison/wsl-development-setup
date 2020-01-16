@@ -37,6 +37,8 @@ The purpose of this guide is to document my personal setup for WSL as I am tryin
 12. To setup docker, you can run the [4_setup_docker.sh](ubuntu_scripts/4_setup_docker.sh) which was pulled from [Setting up docker for windows and wsl to work flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
 13. To setup docker compose, run [5_setup_docker_compose.sh](ubuntu_scripts/5_setup_docker_compose.sh).
 14. I like to use [BurnSushi/erd](https://github.com/BurntSushi/erd) for ERD diagrams, you can run [6_setup_erd.sh](ubuntu_scripts/6_setup_erd.sh) which will install Stack, a haskell compiler, and then install erd.
+15. To make `git` easier in the command line, you can add aliases : [9_git_aliases.sh](ubuntu_scripts/9_git_aliases.sh)
+16. Add unzip : `sudo apt install unzip`
 
 ## Python Environment Management
 
@@ -59,6 +61,27 @@ A handy utility to automate the activation and deactivation of environments is [
 ## Using docker in WSL notes
 
 So far, it has worked well but the one thing I have encountered that requires something special is in order to mount a volume, you will need to use a `--mount` with `type=bind` in order to get the volume to work.  See here for more information [https://docs.docker.com/storage/bind-mounts/](https://docs.docker.com/storage/bind-mounts/)
+- additional note about `docker-compose` not funcitoning properly in wsl: [docker-compose_problem.md](chad_notes/docker-compose_problem.md)
+
+## aws-vault and vault (hashicorp vault)
+
+For aws-vault and hashicorp vault install : [10_vault_aws_vault.sh](ubuntu_config/10_vault_aws_vault.sh)
+* Chad Notes of Understanding (or rather what he understands to this point) [notes](chad_notes/notes_aws-vault_hashicorp-vault.md)
+* hashicorp vault : [stratasan doc page](https://github.com/stratasan/docs/blob/master/configure_vault.md)
+  * uses Active Directory for credentialing
+  * will need to have Active Directory credentials set up for your group (match your team)
+  * will not need to do steps 1 & 2
+  * step 3 for adding env variable and then 4 and 5 to confirm your setup
+* aws-vault
+  * [Doc Page](https://github.com/99designs/aws-vault)
+  * security tool to manage aws credentials
+  * set up
+    * `aws-vault add <name>`
+      * add your access key and secret key
+      * ubuntu will prompt for a password to encrypt the file
+    * after adding a profile in aws-vault add the default region
+        * in `~/.aws/config`
+        * `region = us-east-1`
 
 ## Using Jupyter Notebook in WSL
 
@@ -114,3 +137,21 @@ When using a jupyter notebook in WSL, in order to allow for a notebook to automa
 ## Contribution Notes
 
 * When working in the Ubuntu scripts, if you run into an odd error, it could be a result of Windows new line characters, you can run `sed -i -e 's/\r$//' filename` to resolve the issue.
+
+## Cap lock as Control key in Windows
+[Link to Instructions on the Command](https://superuser.com/questions/949385/map-capslock-to-control-in-windows-10)
+
+## neovim on ubuntu
+
+Most things need neovim that is past 0.3
+- [SO page](https://askubuntu.com/questions/430008/how-to-install-neovim-on-ubuntu)
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
+```
+
+## Chad Notes
+- aliases and functions to add to `.bashrc` added functionality around `aws-vault` and `vault`: [bash_functions.sh](chad_notes/bash_functions.sh)
+- note about adding `pipx` to wsl [note_pipx.md](chad_notes/note_pipx.md)
+
